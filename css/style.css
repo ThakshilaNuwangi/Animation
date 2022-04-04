@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+#stage{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: calc(1vw * 1.204 * 4);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: cornflowerblue;
+}
+#stage::after{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: calc(1vw * 1.204 * 4);
+    background-color: black;
+    margin-left: 5px;
+    vertical-align: text-top;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
