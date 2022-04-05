@@ -18,6 +18,8 @@ body{
     font-size: calc(1vw * 1.204 * 4);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: cornflowerblue;
+    z-index: 2;
+    opacity: 0.95;
 }
 #stage::after{
     content: '';
